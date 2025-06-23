@@ -1,4 +1,4 @@
-FROM ruby:latest
+FROM ruby:3.2
 ENV DEBIAN_FRONTEND noninteractive
 
 Label MAINTAINER Amir Pourmand
@@ -32,8 +32,8 @@ WORKDIR /srv/jekyll
 # install jekyll and dependencies
 RUN gem install jekyll bundler
 
-RUN bundle install --no-cache
-# && rm -rf /var/lib/gems/3.1.0/cache
+# Fix native gem resolution by locking platform
+RUN bundle lock --add-platform x86_64-linux && bundle install --no-cache
 EXPOSE 8080
 
 COPY bin/entry_point.sh /tmp/entry_point.sh

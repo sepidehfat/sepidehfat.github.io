@@ -1,8 +1,10 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+title: Started PhD at Virginia Tech
+date: 2024-01-01
+collection: news
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement.
+I got into **Virginia Tech** to start my PhD! ✨
