@@ -1,7 +1,7 @@
 ---
 layout: post
 title: LakeFM Accepted to KDD 2026 🎉
-date: 2026-11-08
+date: 2026-05-01
 collection: news
 inline: true
 related_posts: false
